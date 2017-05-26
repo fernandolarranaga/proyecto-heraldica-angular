@@ -64,7 +64,7 @@ authController.post("/login", function(req, res, next) {
 
     req.login(user, function(err) {
       if (err) {
-        return res.status(500).json({
+        res.status(500).json({
           message: 'something went wrong :('
         });
       }
