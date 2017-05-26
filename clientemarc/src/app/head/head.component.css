@@ -1,0 +1,22 @@
+nav{
+ background-color: black;
+ position: fixed;
+ width: 100%;
+
+
+ margin: 0 auto;
+ top: 0;
+}
+
+.lista{
+ float: right;
+ padding: 20px 30px;
+ margin: 0 auto;
+}
+
+.lista > li{
+ display:inline-block;
+ padding:10px;
+ color: white;
+
+}
