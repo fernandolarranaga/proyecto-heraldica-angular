@@ -8,12 +8,13 @@ import { FileSelectDirective } from "ng2-file-upload";
 import { FormComponent } from './form/form.component';
 import { MembersComponent } from './members/members.component';
 import { HeadComponent } from './head/head.component';
-import { Routes } from "@angular/router";
+import { RouterModule, Routes } from '@angular/router';
+import { LogComponent } from './log/log.component';
 
 const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: 'formApp',  component: FormComponent },
-
+  { path: 'log',  component: LogComponent },
 ];
 
 @NgModule({
@@ -23,6 +24,7 @@ const routes: Routes = [
     FormComponent,
     MembersComponent,
     HeadComponent,
+    LogComponent,
 
 
 
@@ -30,7 +32,8 @@ const routes: Routes = [
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    RouterModule.forRoot(routes)
   ],
   providers: [SessionService],
   bootstrap: [AppComponent]
