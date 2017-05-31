@@ -15,7 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: 'home', redirectTo: '/', pathMatch: 'full' },
+  { path: '', component: HomeComponent},
   { path: 'app-form',  component: FormComponent },
   { path: 'log',  component: LogComponent },
   { path: 'members',  component: MembersComponent },
