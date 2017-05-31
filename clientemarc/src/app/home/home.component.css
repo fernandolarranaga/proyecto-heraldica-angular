@@ -1,0 +1,23 @@
+.container-home {
+  margin-left: 20%;
+  margin-top: 28px;
+  width: 60%;
+  background-color: white;
+  opacity: 0.8;
+  padding: 5px;
+  font-size: 15px;
+}
+
+.content-home img {
+  height: 300px;
+  opacity: 1.0;
+  padding: 3px;
+  display: inline;
+  margin-left: 4%;
+}
+
+.container-home p {
+  font-size: 25px;
+  padding: 15px;
+  text-align: justify;
+}
