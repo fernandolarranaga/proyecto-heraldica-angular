@@ -10,11 +10,18 @@ import { MembersComponent } from './members/members.component';
 import { HeadComponent } from './head/head.component';
 import { RouterModule, Routes } from '@angular/router';
 import { LogComponent } from './log/log.component';
+import { ProductListComponent } from './product-list/product-list.component';
+import { DetailsComponent } from './details/details.component';
+import { HomeComponent } from './home/home.component';
 
 const routes: Routes = [
-  { path: '', redirectTo: 'home', pathMatch: 'full' },
-  { path: 'formApp',  component: FormComponent },
+  { path: 'home', redirectTo: '/', pathMatch: 'full' },
+  { path: 'app-form',  component: FormComponent },
   { path: 'log',  component: LogComponent },
+  { path: 'members',  component: MembersComponent },
+  { path: 'formulario', component: FormComponent },
+  { path: 'listado-proyectos', component: ProductListComponent},
+  { path: 'details/:id', component: DetailsComponent}
 ];
 
 @NgModule({
@@ -25,6 +32,9 @@ const routes: Routes = [
     MembersComponent,
     HeadComponent,
     LogComponent,
+    ProductListComponent,
+    DetailsComponent,
+    HomeComponent,
 
 
 
@@ -34,6 +44,7 @@ const routes: Routes = [
     FormsModule,
     HttpModule,
     RouterModule.forRoot(routes)
+
   ],
   providers: [SessionService],
   bootstrap: [AppComponent]

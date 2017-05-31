@@ -9,7 +9,7 @@ const BASEURL = "http://localhost:3000";
 
 @Injectable()
 export class SessionService {
-
+  options = {withCredentials:true};
   constructor(private http: Http) { }
 
   handleError(e) {
@@ -17,38 +17,50 @@ export class SessionService {
   }
 
   signup(user) {
-    return this.http.post(`${BASEURL}/signup`, user)
+    return this.http.post(`${BASEURL}/signup`, user, this.options)
       .map(res => res.json())
       .catch(this.handleError);
   }
 
   login(user) {
-    return this.http.post(`${BASEURL}/login`, user,{withCredentials:true})
+    return this.http.post(`${BASEURL}/login`, user, this.options)
       .map(res => res.json())
       .catch(this.handleError);
   }
 
   logout() {
-    return this.http.post(`${BASEURL}/logout`, {withCredentials:true})
+    return this.http.post(`${BASEURL}/logout`,{},this.options)
       .map(res => res.json())
       .catch(this.handleError);
   }
 
   isLoggedIn() {
-    return this.http.get(`${BASEURL}/loggedin`,{withCredentials:true})
+    return this.http.get(`${BASEURL}/loggedin`,this.options)
       .map(res => res.json())
       .catch((err) => this.handleError(err));
   }
 
   getPrivateData() {
-    return this.http.get(`${BASEURL}/private`,{withCredentials:true})
+    return this.http.get(`${BASEURL}/private`,this.options)
       .map(res => res.json())
       .catch(this.handleError);
   }
 
   saveService (formApp) {
-    return this.http.post(`${BASEURL}/books`,formApp, {withCredentials:true})
+    return this.http.post(`${BASEURL}/books`,formApp, this.options)
       .map(res => res.json())
       .catch(this.handleError);
+  }
+
+  findBooks () {
+    return this.http.get(`${BASEURL}/books/`,this.options)
+    .map(res => res.json())
+    .catch(this.handleError);
+  }
+
+  findBookDetail (idBook) {
+    return this.http.get(`${BASEURL}/books/${idBook}`,this.options)
+    .map(res => res.json())
+    .catch(this.handleError);
   }
 }

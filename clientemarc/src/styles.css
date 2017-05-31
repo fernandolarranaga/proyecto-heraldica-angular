@@ -1,46 +1,71 @@
 
 body {
-    /*background-image: url('https://f.hypotheses.org/wp-content/blogs.dir/1752/files/2014/11/Mapa-de-bits-en-Gr%C3%A1fico1.jpg');
+  /*background-image: url('https://f.hypotheses.org/wp-content/blogs.dir/1752/files/2014/11/Mapa-de-bits-en-Gr%C3%A1fico1.jpg');
+  background-image: url('https://iberiahispaniasefaradalandalus.files.wordpress.com/2014/11/batalla_de_rocroi_por_augusto_ferrer-dalmau.jpg');
     */
-    background-image: url('https://iberiahispaniasefaradalandalus.files.wordpress.com/2014/11/batalla_de_rocroi_por_augusto_ferrer-dalmau.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    padding-top:4em;
+  background-image: url('http://2.bp.blogspot.com/-LMwz89W32KY/UyRTu0Rg2KI/AAAAAAAAGKc/zxbqs--QpNA/s0/image.jpg');
+
+  background-color: white;
+  padding-top: 4em;
 }
+
 .form-container {
-    /*background:white;*/
-    background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
-    background-size: cover;
-    padding:3.5em;
-    width:400px;
-    position:fixed;
-    left:50%;
-    margin-left:-250px;
-    margin-top: 21px;
+  /*background:white;*/
+  background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
+  background-size: cover;
+  padding: 3.5em;
+  width: 400px;
+  position: fixed;
+  left: 50%;
+  margin-left: -250px;
+  margin-top: 21px;
 }
 
 button {
-    padding:5px;
-    width:50%;
-    cursor:pointer;
-    margin-bottom:15px;
-    font-size:20px;
+  padding: 5px;
+  width: 50%;
+  cursor: pointer;
+  margin-bottom: 15px;
+  font-size: 20px;
 }
 
 .basic-btn {
-    background: #3B8598;
-    color:white;
+  background: #3B8598;
+  color: white;
 }
 
 input.txt {
-    background:#fff !important;
-    padding:1.3em 1em;
-    font-size:1.3em;
-    border: 1px solid #BBBBBB;
+  background: #fff !important;
+  padding: 15px;
+  font-size: 15px;
+  border: 1px solid #BBBBBB;
+}
+
+#content{
+  margin: 0, auto;
+}
+
+.logo{
+  color: white;
+  float: left;
+  margin-left: 20px;
+  height: 90px;
+}
+
+.log img{
+  height: 60px;
+  margin-top: 15px;
+}
+
+
+h1 {
+  color: red;
+  background-color: white;
+  text-align: center;
 }
 
 h2 {
-    margin: 1.7em 0 .9em 0;
+  margin: 1.7em 0 .9em 0;
 }
 
 @keyframes spin {
@@ -61,7 +86,7 @@ h2 {
         margin-left:-45%;
         background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
         background-size: cover;
-        
+
     }
     button {
         font-size:1em;

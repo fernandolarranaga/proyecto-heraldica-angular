@@ -1,22 +1,19 @@
-<p>
-  form works!
-</p>
-<h1> Sube tus productos </h1>
+
 <div class="form-container">
 	<section id="content">
     <form method="post">
-  <h2> Sube tu libro</h2>
-  <label> Nombre del libro </label>
-  <input type="text" [(ngModel)]="formApp.title" name="title"/>
+
+  <h1> Sube tu libro</h1>
+
+  <input class="txt" type="text" [(ngModel)]="formApp.title" name="title" placeholder="Nombre del libro"/>
   <br>
-  <label> Descripción </label>
-  <input type="text" [(ngModel)]="formApp.description" name="description"/>
+
+  <input class="txt" type="text" [(ngModel)]="formApp.description" name="description" placeholder="Description"/>
   <br>
-  <label> Price </label>
-  <input type="number" [(ngModel)]="formApp.price" name="price"/>
+
+  <input class="txt" type="number" [(ngModel)]="formApp.price" name="price" placeholder="Price"/>
   <br>
-  <label> Subir Imagen </label>
-  <input type="file" name="file" ng2FileSelect [uploader]="uploader" />
+  <input class="txt" type="file" name="file" ng2FileSelect [uploader]="uploader" placeholder="Subir imagen"/>
 
 
 

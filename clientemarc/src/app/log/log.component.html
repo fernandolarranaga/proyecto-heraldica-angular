@@ -1,0 +1,39 @@
+
+<div class="form-container">
+  <section id="content">
+    <form>
+      <h1> Login or Signup </h1>
+
+      <input class="txt" type="text" [(ngModel)]="formInfo.username" name="username" placeholder="Username"/>
+      <br>
+
+      <input class="txt" type="password" [(ngModel)]="formInfo.password" name="password" placeholder="Password"/>
+
+      <button (click)="login()"> login </button>
+      <button (click)="signup()"> signup </button>
+    </form>
+    <p class="error"> {{ error }} </p>
+  </section>
+</div>
+
+<!-- <div *ngIf="user">
+  <h2> You are now logged in as {{ user.username }}!! </h2>
+  <p> Here's the user object </p>
+  <pre> {{ user | json }} </pre>
+
+  <p *ngIf="privateData"> Here's some data fetched from a protected API </p>
+  <pre> {{ privateData | json }} </pre>
+
+  <button (click)="logout()"> logout </button>
+  <button (click)="getPrivateData()"> Get private data </button> -->
+
+<!-- <div *ngIf="user">
+  <h2> You are now logged in as {{ user.username }}!! </h2>
+  <p> Here's the user object </p>
+  <pre> {{ user | json }} </pre>
+
+  <p *ngIf="privateData"> Here's some data fetched from a protected API </p>
+  <pre> {{ privateData | json }} </pre>
+
+  <button (click)="logout()"> logout </button>
+  <button (click)="getPrivateData()"> Get private data </button> -->

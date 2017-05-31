@@ -1,3 +1,22 @@
-<p>
-  members works!
-</p>
+<br>
+<!-- <button type="button" name="button" (click)="click()">Bienvenido Subir Proyectos</button>
+
+<div *ngIf="clicked">
+  <app-form></app-form>
+
+</div>  -->
+
+
+<div *ngIf="user">
+  <h1><a [routerLink]="['/formulario']">Crea tu libro</a></h1>
+
+  <h2> Bienvendido {{ user.username }}!! </h2>
+  <p> Here's the user object </p>
+  <pre> {{ user | json }} </pre>
+
+  <p *ngIf="privateData"> Here's some data fetched from a protected API </p>
+  <pre> {{ privateData | json }} </pre>
+
+  <button (click)="logout()"> logout </button>
+  <button (click)="getPrivateData()"> Get private data </button>
+</div>

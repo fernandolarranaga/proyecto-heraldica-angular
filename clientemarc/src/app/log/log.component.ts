@@ -3,14 +3,12 @@ import { SessionService } from '../session.service';
 import { Router } from '@angular/router';
 
 @Component({
-  selector: 'app-members',
-  templateUrl: './members.component.html',
-  styleUrls: ['./members.component.css']
+  selector: 'app-log',
+  templateUrl: './log.component.html',
+  styleUrls: ['./log.component.css']
 })
-
-export class MembersComponent implements OnInit {
+export class LogComponent implements OnInit {
   user: any;
-  clicked: any;
    formInfo = {
      username: '',
      password: ''
@@ -21,10 +19,29 @@ export class MembersComponent implements OnInit {
   constructor(private session: SessionService, private router:Router) { }
 
    ngOnInit() {
-     this.clicked= false;
      this.session.isLoggedIn()
        .subscribe(
          (user) => this.successCb(user)
+       );
+   }
+
+   login() {
+     console.log(this.formInfo);
+     this.session.login(this.formInfo)
+       .subscribe(
+         (user) => {
+           this.successCb(user)
+           this.router.navigate(['members'])
+         },
+         (err) => this.errorCb(err)
+       );
+   }
+
+   signup() {
+     this.session.signup(this.formInfo)
+       .subscribe(
+         (user) => this.successCb(user),
+         (err) => this.errorCb(err)
        );
    }
 
@@ -34,9 +51,6 @@ export class MembersComponent implements OnInit {
          () => this.successCb(null),
          (err) => this.errorCb(err)
        );
-   }
-   click(){
-       this.clicked = !this.clicked;
    }
 
    getPrivateData() {
@@ -55,6 +69,6 @@ export class MembersComponent implements OnInit {
    successCb(user) {
      this.user = user;
      this.error = null;
-
+     this.router.navigate(['members'])
    }
- }
+}
