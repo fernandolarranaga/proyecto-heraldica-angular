@@ -51,6 +51,7 @@ input.txt {
   float: left;
   margin-left: 20px;
   height: 90px;
+  margin-top: 8px;
 }
 
 .log img{
@@ -60,7 +61,7 @@ input.txt {
 
 
 h1 {
-  color: red;
+  color: black;
   background-color: white;
   text-align: center;
   opacity: 0.2;

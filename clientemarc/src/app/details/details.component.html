@@ -1,6 +1,18 @@
-<h1>Detalles del libro</h1>
+
+
+
 <div class="libreria" *ngIf="(book)" class="libreria">
-  <h3>{{book.title}}</h3>
-  <h3>El precio del proyecto es de: {{book.price}} euros</h3>
-  <h3>{{book.description}}</h3>
+  <h1>Detalles del libro del usuario</h1>
+  <h3>{{book.title}}</h3><br>
+  <div class="content-home">
+    <img src="../src/assets/images/portada-armorial.jpg"/>
+    <img src="../src/assets/images/armorial2.jpg"/>
+
+  </div>
+
+
+  <h4>{{book.description}}</h4>
+  <h5>El precio del proyecto es de: {{book.price}} euros</h5>
+  <br>
+  <button> Colaborar con el proyecto </button>
 </div>

@@ -11,6 +11,7 @@ import { Router, ActivatedRoute } from '@angular/router';
 export class DetailsComponent implements OnInit {
     book: any;
     bookId: any;
+    username: '';
 
 constructor(private service:SessionService, private router:ActivatedRoute) { }
 

@@ -1,10 +1,19 @@
 .libreria{
   background-color: white;
   padding: 5px;
-  color: red;
+  color: black;
   text-align: center;
   margin: 0 auto;
   width: 60%;
+  min-height: 620px;
   height: 100%;
   opacity:;
+  margin-top: 20px;
+}
+.content-home img {
+  height: 300px;
+  opacity: 1.0;
+  padding: 3px;
+  display: inline;
+  margin-left: 4%;
 }
