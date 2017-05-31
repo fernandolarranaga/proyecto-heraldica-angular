@@ -1,4 +1,6 @@
-<div *ngFor= 'let book of books' class="libreria">
+<div *ngFor='let book of books' class="libreria">
+  <img src="../src/assets/images/ibros.jpg" /><br><br>
   <a [routerLink]="['/details', book._id]"><h3>{{book.title}}</h3></a>
-  <h3>{{book.price}}</h3>
+  <h3>El precio del proyecto es de : {{book.price}} euros</h3><br><br>
+
 </div>

@@ -58,8 +58,8 @@ export class SessionService {
     .catch(this.handleError);
   }
 
-  findBookDetail (idBook) {
-    return this.http.get(`${BASEURL}/books/${idBook}`,this.options)
+  getBookDetail(bookId) {
+    return this.http.get(`${BASEURL}/books/${bookId}`,this.options)
     .map(res => res.json())
     .catch(this.handleError);
   }

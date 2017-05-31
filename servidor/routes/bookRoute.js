@@ -37,7 +37,7 @@ bookRoute.get("/", (req, res, next) => {
 
 bookRoute.get("/:id",(req, res, next) => {
   Book.findById(req.params.id).then( book =>{
-    res.status(200).json({book:book});
+    res.status(200).json(book);
   })
   .catch( err => res.status(500).json({message:err,error:true}) );
 });
