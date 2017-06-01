@@ -17,6 +17,7 @@ import { PrivateZoneComponent } from './private-zone/private-zone.component';
 import { ColaborateComponent } from './colaborate/colaborate.component';
 import { BookEditComponent } from './book-edit/book-edit.component';
 
+
 const routes: Routes = [
   { path: '', component: HomeComponent},
   { path: 'app-form',  component: FormComponent },
@@ -43,6 +44,7 @@ const routes: Routes = [
     PrivateZoneComponent,
     ColaborateComponent,
     BookEditComponent,
+  
 
 
 

@@ -2,25 +2,25 @@
 <div class="form-container">
 	<section id="content">
     <form method="post">
-
+<br>
   <h1> Sube tu libro</h1>
 
   <input class="txt" type="text" [(ngModel)]="formApp.title" name="title" placeholder="Nombre del libro"/>
-  <br>
+  <br><br>
 
   <input class="txt" type="text" [(ngModel)]="formApp.description" name="description" placeholder="Description"/>
-  <br>
+  <br><br>
 
   <input class="txt" type="number" [(ngModel)]="formApp.price" name="price" placeholder="Price"/>
-  <br>
+  <br><br>
   <input class="txt" type="file" name="file" ng2FileSelect [uploader]="uploader" placeholder="Subir imagen"/>
 
 
 
-
+<br><br>
   <button (click)="createApp()"> Crear App </button>
-	<div class="imglog2"><img src="../src/assets/images/login2.png"/></div>
-</form>
+
+	</form>
 
 <p class="error"> {{ error }} </p>
 <br><br><br><br>
