@@ -8,10 +8,10 @@
 
 
 <div *ngIf="user" class="libreria">
-
+    <h2> Bienvendido {{ user.username }}!!</h2>
   <div class="content-home">
     <br><br><img src="../src/assets/images/member.jpg"/></div>
-    <h2> Bienvendido {{ user.username }}!!</h2><br>
+
   <h3><a [routerLink]="['/formulario']">Preséntanos tu proyecto</a></h3>
 
 
@@ -22,5 +22,5 @@
   <pre> {{ privateData | json }} </pre> -->
 
   <button (click)="logout()"> logout </button>
-  <button (click)="getPrivateData()"> Get private data </button>
+  <button (click)="getPrivateData()"> Get private data </button><br><br><br>
 </div>

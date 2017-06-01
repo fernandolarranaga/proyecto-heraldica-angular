@@ -34,6 +34,7 @@ export class MembersComponent implements OnInit {
          () => this.successCb(null),
          (err) => this.errorCb(err)
        );
+       this.router.navigate([''])
    }
    click(){
        this.clicked = !this.clicked;

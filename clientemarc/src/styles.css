@@ -1,9 +1,8 @@
-
 body {
   /*background-image: url('https://f.hypotheses.org/wp-content/blogs.dir/1752/files/2014/11/Mapa-de-bits-en-Gr%C3%A1fico1.jpg');
   background-image: url('https://iberiahispaniasefaradalandalus.files.wordpress.com/2014/11/batalla_de_rocroi_por_augusto_ferrer-dalmau.jpg');
-    */
-  background-image: url('http://2.bp.blogspot.com/-LMwz89W32KY/UyRTu0Rg2KI/AAAAAAAAGKc/zxbqs--QpNA/s0/image.jpg');
+*/
+  background-image: url('https://t3.ftcdn.net/jpg/01/19/60/00/240_F_119600016_l0P20t6Q6jkI5B615DBeKrIArbg6Ns4y.jpg');
 
   background-color: white;
   padding-top: 4em;
@@ -20,6 +19,7 @@ body {
   left: 50%;
   margin-left: -250px;
   margin-top: 21px;
+  border-radius: 10%;
 }
 
 .content-home img {
@@ -27,9 +27,8 @@ body {
   opacity: 1.0;
   padding: 3px;
   display: inline;
-  margin-left: 4%;
+  margin-left: 3%;
   text-align: center;
-
 }
 
 button {
@@ -52,11 +51,11 @@ input.txt {
   border: 1px solid #BBBBBB;
 }
 
-#content{
+#content {
   margin: 0, auto;
 }
 
-.logo{
+.logo {
   color: white;
   float: left;
   margin-left: 20px;
@@ -64,25 +63,24 @@ input.txt {
   margin-top: 8px;
 }
 
-.log img{
+.log img {
   height: 60px;
   margin-top: 15px;
 }
 
-
 h1 {
   color: black;
-  background-color: white;
+
   text-align: center;
-  opacity: 0.2;
+
 }
 
 h2 {
   margin: 1.7em 0 .9em 0;
 }
 
-.libreria{
-  background-color: white;
+.libreria {
+  background-color: CORNSILK;
   padding: 5px;
   color: black;
   text-align: center;
@@ -97,21 +95,18 @@ h2 {
   }
 }
 
-
 @media (max-width: 600px) {
-    body {
-        padding-top:1.2em;
-    }
-
-    .form-container {
-        padding:1.2em;
-        width:80%;
-        margin-left:-45%;
-        background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
-        background-size: cover;
-
-    }
-    button {
-        font-size:1em;
-    }
+  body {
+    padding-top: 1.2em;
+  }
+  .form-container {
+    padding: 1.2em;
+    width: 80%;
+    margin-left: -45%;
+    background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
+    background-size: cover;
+  }
+  button {
+    font-size: 1em;
+  }
 }
