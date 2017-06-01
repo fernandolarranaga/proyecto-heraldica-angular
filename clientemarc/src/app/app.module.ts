@@ -15,6 +15,7 @@ import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { PrivateZoneComponent } from './private-zone/private-zone.component';
 import { ColaborateComponent } from './colaborate/colaborate.component';
+import { BookEditComponent } from './book-edit/book-edit.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -41,6 +42,7 @@ const routes: Routes = [
     HomeComponent,
     PrivateZoneComponent,
     ColaborateComponent,
+    BookEditComponent,
 
 
 
