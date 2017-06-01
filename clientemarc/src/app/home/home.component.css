@@ -3,9 +3,10 @@
   margin-top: 28px;
   width: 60%;
   background-color: white;
-  opacity: 0.8;
+  /*opacity: 0.8;*/
   padding: 5px;
   font-size: 15px;
+  text-align: center;
 }
 
 .content-home img {
@@ -14,6 +15,8 @@
   padding: 3px;
   display: inline;
   margin-left: 4%;
+  text-align: center;
+
 }
 
 .container-home p {

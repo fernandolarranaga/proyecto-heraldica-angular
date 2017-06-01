@@ -22,6 +22,16 @@ body {
   margin-top: 21px;
 }
 
+.content-home img {
+  height: 300px;
+  opacity: 1.0;
+  padding: 3px;
+  display: inline;
+  margin-left: 4%;
+  text-align: center;
+
+}
+
 button {
   padding: 5px;
   width: 50%;
@@ -69,6 +79,16 @@ h1 {
 
 h2 {
   margin: 1.7em 0 .9em 0;
+}
+
+.libreria{
+  background-color: white;
+  padding: 5px;
+  color: black;
+  text-align: center;
+  margin: 0 auto;
+  width: 60%;
+  z-index: 99;
 }
 
 @keyframes spin {
