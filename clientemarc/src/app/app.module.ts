@@ -14,6 +14,7 @@ import { ProductListComponent } from './product-list/product-list.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
 import { PrivateZoneComponent } from './private-zone/private-zone.component';
+import { ColaborateComponent } from './colaborate/colaborate.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -22,8 +23,9 @@ const routes: Routes = [
   { path: 'members',  component: MembersComponent },
   { path: 'formulario', component: FormComponent },
   { path: 'listado-proyectos', component: ProductListComponent},
+  { path: 'details/:id/colaborate', component: ColaborateComponent},
   { path: 'details/:id', component: DetailsComponent},
-  { path: 'private-zone', component: PrivateZoneComponent}
+  { path: 'private-zone', component: PrivateZoneComponent},
 ];
 
 @NgModule({
@@ -38,6 +40,7 @@ const routes: Routes = [
     DetailsComponent,
     HomeComponent,
     PrivateZoneComponent,
+    ColaborateComponent,
 
 
 
