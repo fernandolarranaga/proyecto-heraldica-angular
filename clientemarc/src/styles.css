@@ -3,23 +3,15 @@ body {
   background-image: url('https://iberiahispaniasefaradalandalus.files.wordpress.com/2014/11/batalla_de_rocroi_por_augusto_ferrer-dalmau.jpg');
 */
   background-image: url('https://t3.ftcdn.net/jpg/01/19/60/00/240_F_119600016_l0P20t6Q6jkI5B615DBeKrIArbg6Ns4y.jpg');
-
   background-color: white;
   padding-top: 4em;
   margin: 0;
 }
 
 .form-container {
-  /*background:white;*/
-  background-image: url("http://www.genealogiahispana.com/wp-content/uploads/2014/10/blasones.png");
-  background-size: cover;
-  padding: 3.5em;
-  width: 400px;
-  position: fixed;
-  left: 50%;
-  margin-left: -250px;
-  margin-top: 21px;
-  border-radius: 10%;
+  margin-top: 180px;
+  background-color: CORNSILK;
+  width: 100%;
 }
 
 .content-home img {
@@ -33,10 +25,11 @@ body {
 
 button {
   padding: 5px;
-  width: 50%;
+  width: 30%;
   cursor: pointer;
   margin-bottom: 15px;
   font-size: 20px;
+  margin-left: 35%;
 }
 
 .basic-btn {
@@ -46,9 +39,11 @@ button {
 
 input.txt {
   background: #fff !important;
-  padding: 15px;
+  padding: 10px;
+  width: 70%;
   font-size: 15px;
   border: 1px solid #BBBBBB;
+  margin-left: 15%;
 }
 
 #content {
@@ -70,23 +65,59 @@ input.txt {
 
 h1 {
   color: black;
-
   text-align: center;
-
 }
 
 h2 {
   margin: 1.7em 0 .9em 0;
 }
 
+h3{
+  font-size: 20px;
+}
+
+h4{
+    font-size: 20px;
+}
+
+a{
+  text-decoration: none;
+  color: red;
+  font-size: 18px;
+}
+
+H6 {
+  font-size: 80px;
+  color: red;
+  background-color: black;
+  margin-left: 18%;
+  margin-right: 18%;
+  text-align: center;
+  margin-top: 20px;
+  font-style: italic;
+
+
+
+}
+
+.libro img {
+  height: 200px;
+}
+
 .libreria {
+  margin-top: 210px;
   background-color: CORNSILK;
   padding: 5px;
   color: black;
   text-align: center;
-  margin: 0 auto;
-  width: 60%;
+  width: 100%;
   z-index: 99;
+}
+
+.error {
+  font-size: 25px;
+  color: red;
+  margin-left: 40%;
 }
 
 @keyframes spin {

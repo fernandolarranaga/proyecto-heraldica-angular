@@ -1,14 +1,12 @@
-.libreria{
+.libreria {
+  margin-top: 210px;
   background-color: CORNSILK;
   padding: 5px;
   color: black;
   text-align: center;
-  margin: 0 auto;
-  width: 60%;
-  min-height: 620px;
-  height: 100%;
-  opacity:;
-  margin-top: 20px;
+
+  width: 100%;
+  z-index: 99;
 }
 .content-home img {
   height: 300px;

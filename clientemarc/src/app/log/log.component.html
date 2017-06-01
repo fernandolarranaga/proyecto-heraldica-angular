@@ -5,13 +5,13 @@
       <h1> Login or Signup </h1>
 
       <input class="txt" type="text" [(ngModel)]="formInfo.username" name="username" placeholder="Username"/>
-      <br>
+      <br><br>
 
       <input class="txt" type="password" [(ngModel)]="formInfo.password" name="password" placeholder="Password"/>
-
+      <br><br><br>
       <button (click)="login()"> login </button>
-      <button (click)="signup()"> signup </button><br><br><br><br><br><br>
-      <div class="imglog"><img src="../src/assets/images/login.png"/></div>
+      <button (click)="signup()"> signup </button><br><br><br>
+
     </form>
     <p class="error"> {{ error }} </p>
   </section>

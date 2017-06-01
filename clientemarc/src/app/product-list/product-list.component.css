@@ -1,12 +1,9 @@
 .libreria{
+  margin-top: 100px;
   background-color: CORNSILK;
   padding: 5px;
   color: black;
   text-align: center;
   margin: 0 auto;
-  width: 60%;
-}
-
-.libro img{
-  height: 200px;
+  width: 80%;
 }
