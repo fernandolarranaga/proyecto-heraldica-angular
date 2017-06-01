@@ -70,14 +70,17 @@ h1 {
 
 h2 {
   margin: 1.7em 0 .9em 0;
+  text-align: center;
 }
 
 h3{
   font-size: 20px;
+  text-align: center;
 }
 
 h4{
     font-size: 20px;
+    text-align: center;
 }
 
 a{
