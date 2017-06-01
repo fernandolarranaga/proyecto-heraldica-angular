@@ -45,6 +45,7 @@ export class MembersComponent implements OnInit {
          (data) => this.privateData = data,
          (err) => this.error = err
        );
+       this.router.navigate(['private-zone'])
    }
 
    errorCb(err) {

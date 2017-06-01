@@ -13,6 +13,7 @@ import { LogComponent } from './log/log.component';
 import { ProductListComponent } from './product-list/product-list.component';
 import { DetailsComponent } from './details/details.component';
 import { HomeComponent } from './home/home.component';
+import { PrivateZoneComponent } from './private-zone/private-zone.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   { path: 'members',  component: MembersComponent },
   { path: 'formulario', component: FormComponent },
   { path: 'listado-proyectos', component: ProductListComponent},
-  { path: 'details/:id', component: DetailsComponent}
+  { path: 'details/:id', component: DetailsComponent},
+  { path: 'private-zone', component: PrivateZoneComponent}
 ];
 
 @NgModule({
@@ -35,6 +37,7 @@ const routes: Routes = [
     ProductListComponent,
     DetailsComponent,
     HomeComponent,
+    PrivateZoneComponent,
 
 
 
