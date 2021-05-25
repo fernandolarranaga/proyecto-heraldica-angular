@@ -12,7 +12,9 @@ bookRoute.post('/', function(req, res, next) {
   const book = new Book({
     title: req.body.title,
     description: req.body.description,
-    price: req.body.price
+    price: req.body.price,
+    image:req.body.image
+  
 
   });
   book.save((err, book) => {
@@ -40,6 +42,25 @@ bookRoute.get("/:id",(req, res, next) => {
     res.status(200).json(book);
   })
   .catch( err => res.status(500).json({message:err,error:true}) );
+});
+
+
+
+/* DELETE a Phone. */
+
+bookRoute.delete('/:id', (req, res) => {
+  
+
+  Book.remove({ _id: req.params.id }, (err) => {
+    if (err) {
+      res.json(err);
+      return;
+    }
+    return res.json({
+      message: 'Book has been removed!'
+    });
+  })
+
 });
 
 module.exports = bookRoute;

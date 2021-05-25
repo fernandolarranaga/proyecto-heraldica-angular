@@ -13,7 +13,7 @@ export class DetailsComponent implements OnInit {
     bookId: any;
     username: '';
 
-constructor(private service:SessionService, private router:ActivatedRoute) { }
+constructor(private service:SessionService, private route: Router, private router:ActivatedRoute) { }
 
     ngOnInit() {
       this.router.params
@@ -26,5 +26,13 @@ constructor(private service:SessionService, private router:ActivatedRoute) { }
           });
       });
 
+    }
+    deletePhone() {
+      
+        this.service.remove(this.bookId)
+        .subscribe(() => {
+          this.route.navigate(['']);
+        });
+    
     }
 }

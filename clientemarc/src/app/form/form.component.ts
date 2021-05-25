@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {SessionService} from '../session.service';
 import { FileSelectDirective } from "ng2-file-upload";
+import { Router } from '@angular/router';
 
 
 @Component({
@@ -19,7 +20,7 @@ export class FormComponent implements OnInit {
     app: any;
     error: any;
 
-  constructor(private service: SessionService) { }
+  constructor(private service: SessionService, private route: Router) { }
   ngOnInit() {
   }
   createApp(){
@@ -27,7 +28,9 @@ export class FormComponent implements OnInit {
         .subscribe(
           (app)=> this.successCb(app),
           (err) => this.errorCb(err),
-
+          ()=>{
+            this.route.navigate([''])
+          }
 
         );
 

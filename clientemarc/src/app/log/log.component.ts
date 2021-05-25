@@ -33,7 +33,8 @@ export class LogComponent implements OnInit {
            this.successCb(user)
            this.router.navigate(['members'])
          },
-         (err) => this.errorCb(err)
+         (err) => this.errorCb(err),
+        
        );
    }
 
@@ -41,7 +42,8 @@ export class LogComponent implements OnInit {
      this.session.signup(this.formInfo)
        .subscribe(
          (user) => this.successCb(user),
-         (err) => this.errorCb(err)
+         (err) => this.errorCb(err),
+        
        );
    }
 
